@@ -30,3 +30,40 @@ input,
 select {
   font: inherit;
 }
+
+.reviews-marquee {
+  overflow: hidden;
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+
+.reviews-track {
+  display: flex;
+  width: max-content;
+  animation: reviews-marquee 42s linear infinite;
+  will-change: transform;
+}
+
+.reviews-track > article {
+  margin-right: 16px;
+}
+
+.reviews-marquee:hover .reviews-track {
+  animation-play-state: paused;
+}
+
+@keyframes reviews-marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reviews-marquee {
+    overflow-x: auto;
+    mask-image: none;
+  }
+
+  .reviews-track {
+    animation: none;
+  }
+}
