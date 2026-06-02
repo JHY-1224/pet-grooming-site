@@ -1,0 +1,7 @@
+interface:
+  display_name: "选题 Skill"
+  short_description: "为 AI 领域内容生成十个不同风格选题标题与创作角度"
+  default_prompt: "Use $xuanti-skill to generate 10 different-style AI topic titles."
+
+policy:
+  allow_implicit_invocation: true

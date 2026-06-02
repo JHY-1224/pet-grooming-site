@@ -1,0 +1,129 @@
+export const site = {
+  brand: "绒爪宠物洗护",
+  nav: [
+    { label: "服务", href: "#services" },
+    { label: "护理", href: "#care" },
+    { label: "环境", href: "#environment" },
+    { label: "价格", href: "#pricing" },
+    { label: "到店", href: "#contact" },
+  ],
+  hero: {
+    eyebrow: "Pet Grooming Studio",
+    title: "把每一次洗护，做成宠物放松的小假期。",
+    copy: "绒爪宠物洗护提供猫犬洗澡、造型修剪、皮毛护理与基础健康清洁。独立烘干间、低刺激香波、可视化护理记录，让家长放心，也让毛孩子舒服。",
+    image: "/images/pet-grooming-hero.png",
+    metrics: [
+      { value: "45min", label: "小型犬快速洗护" },
+      { value: "1v1", label: "专属美容师服务" },
+      { value: "98%", label: "回访满意度" },
+    ],
+  },
+  services: [
+    {
+      icon: "洗",
+      title: "基础洗护",
+      copy: "温和清洁、吹干梳毛、耳道清洁、指甲修剪、脚底毛处理。",
+      color: "bg-[var(--mint-dark)] text-white",
+    },
+    {
+      icon: "剪",
+      title: "造型美容",
+      copy: "圆脸、泰迪装、短毛清爽造型、局部精修与赛级风格咨询。",
+      color: "bg-[var(--coral)] text-white",
+    },
+    {
+      icon: "护",
+      title: "皮毛养护",
+      copy: "针对干燥、打结、掉毛、敏感皮肤提供深层护理和专用产品。",
+      color: "bg-[var(--lemon)] text-[var(--ink)]",
+    },
+    {
+      icon: "洁",
+      title: "洁牙洁耳",
+      copy: "日常口腔护理、泪痕清洁、耳垢处理，帮助维持健康状态。",
+      color: "bg-[var(--sky)] text-[var(--mint-dark)]",
+    },
+  ],
+  careSteps: [
+    {
+      number: "01",
+      title: "到店评估",
+      copy: "先检查毛结、皮肤、耳朵和指甲情况，再确认适合的洗护方式。",
+    },
+    {
+      number: "02",
+      title: "低应激洗护",
+      copy: "分段清洁与低噪吹干，遇到紧张宠物会暂停安抚，不赶进度。",
+    },
+    {
+      number: "03",
+      title: "离店反馈",
+      copy: "交付护理照片、注意事项和下次建议，方便家长持续照顾。",
+    },
+  ],
+  environment: [
+    {
+      title: "前台接待区",
+      copy: "温润木作、石材吧台与产品陈列，让到店第一眼就干净有秩序。",
+      image: "/images/env-reception.png",
+      alt: "高端中式宠物洗护店前台接待区",
+    },
+    {
+      title: "洗护 SPA 区",
+      copy: "独立浴位、低噪设备和专业收纳，减少宠物等待与交叉干扰。",
+      image: "/images/env-spa.png",
+      alt: "高端中式宠物洗护店洗护 SPA 区",
+    },
+    {
+      title: "VIP 美容护理区",
+      copy: "私密护理间适合精修造型、敏感宠物和需要更安静环境的毛孩子。",
+      image: "/images/env-vip-grooming.png",
+      alt: "高端中式宠物洗护店 VIP 美容护理区",
+    },
+  ],
+  pricing: [
+    {
+      tag: "轻松洗净",
+      title: "基础洗护",
+      price: "¥88",
+      features: ["洗澡吹干", "梳毛开结", "耳道与脚底清洁"],
+      featured: false,
+    },
+    {
+      tag: "热门选择",
+      title: "洗护造型",
+      price: "¥168",
+      features: ["基础洗护全套", "全身造型修剪", "护理后照片记录"],
+      featured: true,
+    },
+    {
+      tag: "进阶护理",
+      title: "皮毛 SPA",
+      price: "¥238",
+      features: ["专用养护香波", "深层护毛护理", "泪痕与局部清洁"],
+      featured: false,
+    },
+  ],
+  reviews: [
+    {
+      title: "“第一次没抗拒吹风。”",
+      copy: "我家比熊很怕吹风，护理师会慢慢安抚，还拍了过程照片，非常放心。",
+    },
+    {
+      title: "“剪得清爽又自然。”",
+      copy: "不是模板化造型，会先沟通脸型和毛量，最后效果比我预期更好。",
+    },
+    {
+      title: "“环境干净，没有异味。”",
+      copy: "猫咪洗完毛很蓬松，回家也没有过度紧张，下次还会继续预约。",
+    },
+  ],
+  contact: {
+    title: "预约一场舒服的洗护体验。",
+    copy: "建议提前 1 天预约。到店前无需禁食，若宠物近期皮肤敏感、打疫苗或身体不适，请在预约时备注。",
+    hours: "营业时间：周一至周日 10:00 - 20:00",
+    address: "江苏省无锡市新吴区国家软件园杜鹃座",
+    phone: "预约电话：138-0000-0000",
+    mapImage: "/images/store-map.png",
+  },
+} as const;
